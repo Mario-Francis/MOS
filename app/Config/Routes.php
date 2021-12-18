@@ -49,3 +49,8 @@ $routes->get('/', 'Home::index');
 if (file_exists(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
     require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';
 }
+
+
+$routes->post('/application/submit', 'Home::api_save_application');
+$routes->post('/payments/verify', 'Home::api_verify_payment');
+$routes->get('/application/apply', 'Home::new_application');

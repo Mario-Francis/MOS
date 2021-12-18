@@ -1,0 +1,71 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:wght@200;300;400&family=Roboto:wght@100;300;400&display=swap');
+
+.open-sans {
+    font-family: 'Open Sans', sans-serif;
+}
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+.poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.f8 {
+    font-size: 8px !important;
+}
+
+.f10 {
+    font-size: 10px !important;
+}
+
+.f12 {
+    font-size: 12px !important;
+}
+
+.f14 {
+    font-size: 14px !important;
+}
+
+.f16 {
+    font-size: 16px !important;
+}
+.f18 {
+    font-size: 18px !important;
+}
+
+.f20 {
+    font-size: 20px !important;
+}
+
+.f22 {
+    font-size: 22px !important;
+}
+
+.f24 {
+    font-size: 24px !important;
+}
+
+.f26 {
+    font-size: 26px !important;
+}
+
+.f28 {
+    font-size: 28px !important;
+}
+
+.f30 {
+    font-size: 30px !important;
+}
+
+.f40 {
+    font-size: 40px !important;
+}
+
+.f50 {
+    font-size: 50px !important;
+}
+
+
+.mini-bold {
+    font-weight: 500;
+}

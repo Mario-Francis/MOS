@@ -7,6 +7,7 @@ use CodeIgniter\HTTP\CLIRequest;
 use CodeIgniter\HTTP\IncomingRequest;
 use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
+use Config\Services;
 use Psr\Log\LoggerInterface;
 
 /**
@@ -35,7 +36,12 @@ class BaseController extends Controller
      *
      * @var array
      */
-    protected $helpers = [];
+    protected $helpers = ['text'];
+
+    protected $list_service;
+    protected $application_service;
+    protected $meter_service;
+    protected $payment_service;
 
     /**
      * Constructor.
@@ -46,7 +52,14 @@ class BaseController extends Controller
         parent::initController($request, $response, $logger);
 
         // Preload any models, libraries, etc, here.
+        
+        // services
+        $this->list_service = Services::list_service();
+        $this->application_service = Services::application_service();
+        $this->meter_service = Services::meter_service();
+        $this->payment_service = Services::payment_service();
 
         // E.g.: $this->session = \Config\Services::session();
+        $this->session = session();
     }
 }
